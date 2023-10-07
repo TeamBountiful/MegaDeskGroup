@@ -15,7 +15,7 @@ namespace MegaDesk
     {
         //file is the name of the json file of saved quotes.
         //quotes will be the list of quotes as class objects
-        string filePath = "test.json";
+        readonly string filePath = "test.json";
         public List<DeskQuote> quotes;
         public ViewQuotesForm()
         {
