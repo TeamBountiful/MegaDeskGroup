@@ -16,6 +16,7 @@ namespace MegaDesk
         public string Name { get; set; }
         public string OrderDate { get; set; }
         public double RushOrder {  get; set; }
+        public double Price { get; set; }
 
         public double Depth { get { return Desk.Depth; } }
         public double Width { get{ return Desk.Width; } }
@@ -117,6 +118,7 @@ namespace MegaDesk
                         break;
                     }
             }
+            Price = deskPrice;
             return deskPrice;
         }
 
