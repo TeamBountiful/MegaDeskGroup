@@ -7,14 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace MegaDesk
 {
     public partial class SearchQuoteForm : Form
     {
+        readonly string filePath = "test.json";
+        public List<DeskQuote> quotes;
+        public List<DeskQuote> filteredQuotes;
         public SearchQuoteForm()
         {
             InitializeComponent();
+            FillQuotes();
         }
 
         private void SearchReturnButton_Click(object sender, EventArgs e)
@@ -23,6 +28,22 @@ namespace MegaDesk
             viewMainMenuForm.Show();
             Close();
 
+        }
+
+        private void FillQuotes()
+        {
+            string jsonSaves = File.ReadAllText(filePath);
+            quotes = System.Text.Json.JsonSerializer.Deserialize<List<DeskQuote>>(jsonSaves);
+            searchQuotes.DataSource = quotes;
+
+        }
+
+        private void filter_Click(object sender, EventArgs e)
+        {
+            string jsonSaves = File.ReadAllText(filePath);
+            quotes = System.Text.Json.JsonSerializer.Deserialize<List<DeskQuote>>(jsonSaves);
+            filteredQuotes = (quotes.FindAll(quote => quote.Desk.SurfaceMaterial.ToString() == materialFilterPicker.SelectedItem.ToString()));
+            searchQuotes.DataSource = filteredQuotes;
         }
     }
 }

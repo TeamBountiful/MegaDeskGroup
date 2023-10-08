@@ -50,9 +50,10 @@
             // ExitAddNew
             // 
             this.ExitAddNew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ExitAddNew.Location = new System.Drawing.Point(517, 226);
+            this.ExitAddNew.Location = new System.Drawing.Point(689, 278);
+            this.ExitAddNew.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ExitAddNew.Name = "ExitAddNew";
-            this.ExitAddNew.Size = new System.Drawing.Size(129, 34);
+            this.ExitAddNew.Size = new System.Drawing.Size(172, 42);
             this.ExitAddNew.TabIndex = 8;
             this.ExitAddNew.Text = "Return to Main";
             this.ExitAddNew.UseVisualStyleBackColor = false;
@@ -63,9 +64,10 @@
             this.AddLabel.AutoSize = true;
             this.AddLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.AddLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddLabel.Location = new System.Drawing.Point(315, 9);
+            this.AddLabel.Location = new System.Drawing.Point(420, 11);
+            this.AddLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.AddLabel.Name = "AddLabel";
-            this.AddLabel.Size = new System.Drawing.Size(186, 31);
+            this.AddLabel.Size = new System.Drawing.Size(228, 38);
             this.AddLabel.TabIndex = 1;
             this.AddLabel.Text = "Add New Quote";
             this.AddLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -75,9 +77,10 @@
             this.InputNameLabel.AutoSize = true;
             this.InputNameLabel.BackColor = System.Drawing.Color.White;
             this.InputNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InputNameLabel.Location = new System.Drawing.Point(57, 104);
+            this.InputNameLabel.Location = new System.Drawing.Point(76, 128);
+            this.InputNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.InputNameLabel.Name = "InputNameLabel";
-            this.InputNameLabel.Size = new System.Drawing.Size(124, 20);
+            this.InputNameLabel.Size = new System.Drawing.Size(154, 25);
             this.InputNameLabel.TabIndex = 2;
             this.InputNameLabel.Text = "Customer Name";
             // 
@@ -86,9 +89,10 @@
             this.InputMaterialLabel.AutoSize = true;
             this.InputMaterialLabel.BackColor = System.Drawing.Color.White;
             this.InputMaterialLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InputMaterialLabel.Location = new System.Drawing.Point(56, 276);
+            this.InputMaterialLabel.Location = new System.Drawing.Point(75, 340);
+            this.InputMaterialLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.InputMaterialLabel.Name = "InputMaterialLabel";
-            this.InputMaterialLabel.Size = new System.Drawing.Size(125, 20);
+            this.InputMaterialLabel.Size = new System.Drawing.Size(154, 25);
             this.InputMaterialLabel.TabIndex = 3;
             this.InputMaterialLabel.Text = "Surface Material";
             // 
@@ -97,9 +101,10 @@
             this.InputDepthLabel.AutoSize = true;
             this.InputDepthLabel.BackColor = System.Drawing.Color.White;
             this.InputDepthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InputDepthLabel.Location = new System.Drawing.Point(62, 185);
+            this.InputDepthLabel.Location = new System.Drawing.Point(83, 228);
+            this.InputDepthLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.InputDepthLabel.Name = "InputDepthLabel";
-            this.InputDepthLabel.Size = new System.Drawing.Size(119, 20);
+            this.InputDepthLabel.Size = new System.Drawing.Size(146, 25);
             this.InputDepthLabel.TabIndex = 4;
             this.InputDepthLabel.Text = "Depth in inches";
             // 
@@ -108,9 +113,10 @@
             this.InputWidthLabel.AutoSize = true;
             this.InputWidthLabel.BackColor = System.Drawing.Color.White;
             this.InputWidthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InputWidthLabel.Location = new System.Drawing.Point(62, 145);
+            this.InputWidthLabel.Location = new System.Drawing.Point(83, 178);
+            this.InputWidthLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.InputWidthLabel.Name = "InputWidthLabel";
-            this.InputWidthLabel.Size = new System.Drawing.Size(116, 20);
+            this.InputWidthLabel.Size = new System.Drawing.Size(145, 25);
             this.InputWidthLabel.TabIndex = 5;
             this.InputWidthLabel.Text = "Width in inches";
             // 
@@ -119,9 +125,10 @@
             this.InputRushLabel.AutoSize = true;
             this.InputRushLabel.BackColor = System.Drawing.Color.White;
             this.InputRushLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InputRushLabel.Location = new System.Drawing.Point(90, 327);
+            this.InputRushLabel.Location = new System.Drawing.Point(120, 402);
+            this.InputRushLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.InputRushLabel.Name = "InputRushLabel";
-            this.InputRushLabel.Size = new System.Drawing.Size(91, 20);
+            this.InputRushLabel.Size = new System.Drawing.Size(112, 25);
             this.InputRushLabel.TabIndex = 6;
             this.InputRushLabel.Text = "Rush Order";
             // 
@@ -130,32 +137,36 @@
             this.InputDrawerLabel.AutoSize = true;
             this.InputDrawerLabel.BackColor = System.Drawing.Color.White;
             this.InputDrawerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InputDrawerLabel.Location = new System.Drawing.Point(113, 232);
+            this.InputDrawerLabel.Location = new System.Drawing.Point(151, 286);
+            this.InputDrawerLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.InputDrawerLabel.Name = "InputDrawerLabel";
-            this.InputDrawerLabel.Size = new System.Drawing.Size(68, 20);
+            this.InputDrawerLabel.Size = new System.Drawing.Size(84, 25);
             this.InputDrawerLabel.TabIndex = 7;
             this.InputDrawerLabel.Text = "Drawers";
             // 
             // InputName
             // 
-            this.InputName.Location = new System.Drawing.Point(188, 103);
+            this.InputName.Location = new System.Drawing.Point(251, 127);
+            this.InputName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.InputName.Name = "InputName";
-            this.InputName.Size = new System.Drawing.Size(196, 20);
+            this.InputName.Size = new System.Drawing.Size(260, 22);
             this.InputName.TabIndex = 1;
             // 
             // InputWidth
             // 
-            this.InputWidth.Location = new System.Drawing.Point(188, 145);
+            this.InputWidth.Location = new System.Drawing.Point(251, 178);
+            this.InputWidth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.InputWidth.Name = "InputWidth";
-            this.InputWidth.Size = new System.Drawing.Size(40, 20);
+            this.InputWidth.Size = new System.Drawing.Size(52, 22);
             this.InputWidth.TabIndex = 2;
             this.InputWidth.Leave += new System.EventHandler(this.InputWidth_Leave);
             // 
             // InputDepth
             // 
-            this.InputDepth.Location = new System.Drawing.Point(188, 185);
+            this.InputDepth.Location = new System.Drawing.Point(251, 228);
+            this.InputDepth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.InputDepth.Name = "InputDepth";
-            this.InputDepth.Size = new System.Drawing.Size(40, 20);
+            this.InputDepth.Size = new System.Drawing.Size(52, 22);
             this.InputDepth.TabIndex = 3;
             this.InputDepth.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.InputDepth_KeyPress);
             this.InputDepth.Leave += new System.EventHandler(this.InputDepth_Leave);
@@ -163,9 +174,10 @@
             // CalcQuoteButton
             // 
             this.CalcQuoteButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.CalcQuoteButton.Location = new System.Drawing.Point(517, 145);
+            this.CalcQuoteButton.Location = new System.Drawing.Point(689, 178);
+            this.CalcQuoteButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CalcQuoteButton.Name = "CalcQuoteButton";
-            this.CalcQuoteButton.Size = new System.Drawing.Size(129, 40);
+            this.CalcQuoteButton.Size = new System.Drawing.Size(172, 49);
             this.CalcQuoteButton.TabIndex = 7;
             this.CalcQuoteButton.Text = "Calculate Quote";
             this.CalcQuoteButton.UseVisualStyleBackColor = false;
@@ -183,9 +195,10 @@
             "5",
             "6",
             "7"});
-            this.InputDrawers.Location = new System.Drawing.Point(188, 230);
+            this.InputDrawers.Location = new System.Drawing.Point(251, 283);
+            this.InputDrawers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.InputDrawers.Name = "InputDrawers";
-            this.InputDrawers.Size = new System.Drawing.Size(40, 21);
+            this.InputDrawers.Size = new System.Drawing.Size(52, 24);
             this.InputDrawers.TabIndex = 4;
             // 
             // InputSurfMat
@@ -197,9 +210,10 @@
             "rosewood",
             "veneer",
             "pine"});
-            this.InputSurfMat.Location = new System.Drawing.Point(188, 274);
+            this.InputSurfMat.Location = new System.Drawing.Point(251, 337);
+            this.InputSurfMat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.InputSurfMat.Name = "InputSurfMat";
-            this.InputSurfMat.Size = new System.Drawing.Size(121, 21);
+            this.InputSurfMat.Size = new System.Drawing.Size(160, 24);
             this.InputSurfMat.TabIndex = 5;
             // 
             // InputRushOrder
@@ -210,16 +224,18 @@
             "5",
             "7",
             "14"});
-            this.InputRushOrder.Location = new System.Drawing.Point(188, 326);
+            this.InputRushOrder.Location = new System.Drawing.Point(251, 401);
+            this.InputRushOrder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.InputRushOrder.Name = "InputRushOrder";
-            this.InputRushOrder.Size = new System.Drawing.Size(40, 21);
+            this.InputRushOrder.Size = new System.Drawing.Size(52, 24);
             this.InputRushOrder.TabIndex = 6;
             // 
             // DateBox
             // 
-            this.DateBox.Location = new System.Drawing.Point(188, 63);
+            this.DateBox.Location = new System.Drawing.Point(251, 78);
+            this.DateBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DateBox.Name = "DateBox";
-            this.DateBox.Size = new System.Drawing.Size(210, 20);
+            this.DateBox.Size = new System.Drawing.Size(279, 22);
             this.DateBox.TabIndex = 13;
             this.DateBox.TabStop = false;
             // 
@@ -228,18 +244,19 @@
             this.DateLabel.AutoSize = true;
             this.DateLabel.BackColor = System.Drawing.Color.White;
             this.DateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DateLabel.Location = new System.Drawing.Point(94, 63);
+            this.DateLabel.Location = new System.Drawing.Point(125, 78);
+            this.DateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DateLabel.Name = "DateLabel";
-            this.DateLabel.Size = new System.Drawing.Size(88, 20);
+            this.DateLabel.Size = new System.Drawing.Size(108, 25);
             this.DateLabel.TabIndex = 14;
             this.DateLabel.Text = "Order Date";
             // 
             // AddNewQuote
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.DateLabel);
             this.Controls.Add(this.DateBox);
             this.Controls.Add(this.InputRushOrder);
@@ -257,6 +274,7 @@
             this.Controls.Add(this.InputNameLabel);
             this.Controls.Add(this.AddLabel);
             this.Controls.Add(this.ExitAddNew);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AddNewQuote";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add New Quote";

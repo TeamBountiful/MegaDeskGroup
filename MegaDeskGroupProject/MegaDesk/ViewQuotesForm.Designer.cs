@@ -46,10 +46,10 @@
             // ReturnToHomeFromView
             // 
             this.ReturnToHomeFromView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ReturnToHomeFromView.Location = new System.Drawing.Point(932, 595);
-            this.ReturnToHomeFromView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ReturnToHomeFromView.Location = new System.Drawing.Point(828, 476);
+            this.ReturnToHomeFromView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ReturnToHomeFromView.Name = "ReturnToHomeFromView";
-            this.ReturnToHomeFromView.Size = new System.Drawing.Size(186, 38);
+            this.ReturnToHomeFromView.Size = new System.Drawing.Size(165, 30);
             this.ReturnToHomeFromView.TabIndex = 0;
             this.ReturnToHomeFromView.Text = "Return To Home";
             this.ReturnToHomeFromView.UseVisualStyleBackColor = false;
@@ -59,10 +59,10 @@
             // 
             this.ViewQuotesLabel.AutoSize = true;
             this.ViewQuotesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ViewQuotesLabel.Location = new System.Drawing.Point(429, 83);
+            this.ViewQuotesLabel.Location = new System.Drawing.Point(381, 66);
             this.ViewQuotesLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ViewQuotesLabel.Name = "ViewQuotesLabel";
-            this.ViewQuotesLabel.Size = new System.Drawing.Size(271, 40);
+            this.ViewQuotesLabel.Size = new System.Drawing.Size(227, 36);
             this.ViewQuotesLabel.TabIndex = 1;
             this.ViewQuotesLabel.Text = "View All Quotes";
             // 
@@ -80,11 +80,12 @@
             this.numberOfDrawers,
             this.surfaceMaterial,
             this.desk});
-            this.viewQuotes.Location = new System.Drawing.Point(66, 154);
+            this.viewQuotes.Location = new System.Drawing.Point(59, 123);
+            this.viewQuotes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.viewQuotes.Name = "viewQuotes";
             this.viewQuotes.RowHeadersWidth = 62;
             this.viewQuotes.RowTemplate.Height = 28;
-            this.viewQuotes.Size = new System.Drawing.Size(1066, 412);
+            this.viewQuotes.Size = new System.Drawing.Size(948, 330);
             this.viewQuotes.TabIndex = 2;
             // 
             // name
@@ -162,14 +163,14 @@
             // 
             // ViewQuotesForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.viewQuotes);
             this.Controls.Add(this.ViewQuotesLabel);
             this.Controls.Add(this.ReturnToHomeFromView);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ViewQuotesForm";
             this.Text = "ViewQuotesForm";
             this.Load += new System.EventHandler(this.ViewQuotesForm_Load);
