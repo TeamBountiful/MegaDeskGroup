@@ -2,29 +2,28 @@
 using System.Collections.Generic;
 using System.Diagnostics.Eventing.Reader;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Security.Permissions;
 using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+using System.Windows.Forms;
 
 namespace MegaDesk
 {
     public class DeskQuote
     {
-
         public Desk Desk { get; set; }
         public string Name { get; set; }
         public string OrderDate { get; set; }
         public double RushOrder {  get; set; }
         public double Price { get; set; }
-
         public double Depth { get { return Desk.Depth; } }
         public double Width { get{ return Desk.Width; } }
         public double NumberofDrawers { get { return Desk.NumberofDrawers; } }
         public SurfaceMaterial SurfaceMaterial { get { return Desk.SurfaceMaterial; } }
 
-
-        public double RushCost = 0;
         public double surfaceArea = 0;
         public double totalSurfaceArea = 0;
         public double addDrawer = 0;
@@ -37,23 +36,15 @@ namespace MegaDesk
         private const double PriceVeneer = 125;
         private const double PricePine = 50;
         private const double ExtraSurfaceArea = 1;
-        private const double RushSmall3 = 60;
-        private const double RushMed3 = 70;
-        private const double RushLarge3 = 80;
-        private const double RushSmall5 = 40;
-        private const double RushMed5 = 50;
-        private const double RushLarge5 = 60;
-        private const double RushSmall7 = 30;
-        private const double RushMed7 = 35;
-        private const double RushLarge7 = 40;
-        //private const double StandardProc = 14;
 
-        //bool IsRushOrder;
-        
+        private double[,] rushOrderData;
+        const string rushfilePath = "rushOrderPrices.txt";
+
         public DeskQuote(Desk desk) 
         {
             Desk = desk;
             GetOrderDate();
+            rushOrderData = new double[3, 3];
         }
 
         public void GetOrderDate()
@@ -62,15 +53,12 @@ namespace MegaDesk
             OrderDate = dateTime.ToString("MM/dd/yyyy");
         }
 
-
         //GetPrice Function
         public double GetPrice()
         {
             double deskPrice = 0;
             surfaceArea = Width * Depth;
-            GetRush();
-
-
+            
             if (surfaceArea>1000)
             {
                 totalSurfaceArea = (surfaceArea - 1000) * ExtraSurfaceArea + BasePrice; 
@@ -85,83 +73,129 @@ namespace MegaDesk
             else
             { addDrawer = 0; }
 
+            double surfaceCost = 0;
             switch (SurfaceMaterial)
             {
                 case SurfaceMaterial.oak:
                     {
-                        GetRush();
-                        deskPrice = totalSurfaceArea + addDrawer + RushCost + PriceOak;
+                        surfaceCost= PriceOak;
                         break;
                     }
                 case SurfaceMaterial.laminate:
                     {
-                        GetRush();
-                        deskPrice = totalSurfaceArea + addDrawer + RushCost + PriceLaminate;
+                        surfaceCost = PriceLaminate;
                         break;
                     }
                 case SurfaceMaterial.rosewood:
                     {
-                        GetRush();
-                        deskPrice = totalSurfaceArea + addDrawer + RushCost + PriceRosewood;
+                        surfaceCost = PriceRosewood;
                         break;
                     }
                 case SurfaceMaterial.veneer:
                     {
-                        GetRush();
-                        deskPrice = totalSurfaceArea + addDrawer + RushCost + PriceVeneer;
+                        surfaceCost = PriceVeneer;
                         break;
                     }
                 case SurfaceMaterial.pine:
                     {
-                        GetRush();
-                        deskPrice = totalSurfaceArea + addDrawer + RushCost + PricePine;
+                        surfaceCost = PricePine;
                         break;
                     }
             }
+            double rushCost = GetRush();
+            deskPrice = totalSurfaceArea + addDrawer + rushCost + surfaceCost;
             Price = deskPrice;
             return deskPrice;
         }
 
-
-
-
-
         public double GetRush()
         {
+            int colIndex = -1;
+            int rowIndex = -1;
             switch (RushOrder)
             {
                 case 3:
+                    rowIndex = 0;
                     if (totalSurfaceArea < 1000)
-                    { RushCost = RushSmall3; }
+                    {
+                        colIndex = 0;
+                    }
 
                     else if (totalSurfaceArea > 1000 && totalSurfaceArea < 2000)
-                    { RushCost = RushMed3; }
+                    {
+                        colIndex = 1;
+                    }
                     else
-                    { RushCost = RushLarge3; }
-                    return RushCost;
+                    {
+                        colIndex = 2;
+                    }
+                    return GetRushOrder(rowIndex,colIndex);
                         
                 case 5:
+                    rowIndex = 1;
                     if (totalSurfaceArea < 1000)
-                    { RushCost = RushSmall5; }
+                    {
+                        colIndex = 0;
+                    }
 
                     else if (totalSurfaceArea > 1000 && totalSurfaceArea < 2000)
-                    { RushCost = RushMed5; }
+                    {
+                        colIndex = 1;
+                    }
                     else
-                    { RushCost = RushLarge5; }
-                    return RushCost;
-                        
+                    {
+                        colIndex = 2;
+                    }
+                    return GetRushOrder(rowIndex, colIndex);
+
                 case 7:
+                    rowIndex = 2;
                     if (totalSurfaceArea < 1000)
-                    { RushCost = RushSmall7; }
+                    {
+                        colIndex = 0;
+                    }
 
                     else if (totalSurfaceArea > 1000 && totalSurfaceArea < 2000)
-                    { RushCost = RushMed7; }
+                    {
+                        colIndex = 01;
+                    }
                     else
-                    { RushCost = RushLarge7; }
-                    return RushCost;
+                    {
+                        colIndex = 01;
+                    }
+                    return GetRushOrder(rowIndex, colIndex);
                 default:
-                    return RushCost;
+                    return  0;
             }
         }
+
+        //Group - Amanda add GetRushOrder method to create array and pull data from rushOrderPrices.txt
+        //sets variables for rush
+
+        public double GetRushOrder(int rowIndex, int colIndex)
+        {
+            double[,] values = new double[3, 3];
+            try
+            {
+                string[] lines = File.ReadAllLines(rushfilePath, Encoding.UTF8);
+
+                int index = 0;
+                for (int i = 0; i < 3; i++)
+                {
+                    for (int j = 0; j < 3; j++)
+                    {
+                        values[i, j] = double.Parse(lines[index]);
+                        index++;
+                    }
+                }
+                return values[rowIndex, colIndex];
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Rush File Not Found");
+                return 0;
+            }
+        }
+
     }
 }
