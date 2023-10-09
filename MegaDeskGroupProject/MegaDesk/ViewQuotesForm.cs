@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,7 +20,15 @@ namespace MegaDesk
         public ViewQuotesForm()
         {
             InitializeComponent();
-            FillQuotes();
+
+            if (File.Exists(filePath))
+            {
+              FillQuotes();
+            }
+            else
+            {
+              MessageBox.Show("Save file could not be found");
+            }
         }
         private void FillQuotes()
         {
