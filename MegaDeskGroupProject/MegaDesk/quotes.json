@@ -1,0 +1,42 @@
+{
+  [
+    {
+      "Desk": {
+        "Width": 30,
+        "Depth": 24,
+        "NumberofDrawers": 2,
+        "SurfaceMaterial": 1
+      },
+      "Name": "John Doe",
+      "OrderDate": "10/04/2023",
+      "RushOrder": 3,
+      "Price": 400
+    },
+    {
+      "Desk": {
+        "Width": 36,
+        "Depth": 30,
+        "NumberofDrawers": 1,
+        "SurfaceMaterial": 1
+      },
+      "Name": "Jane Smith",
+      "OrderDate": "10/04/2023",
+      "RushOrder": 5,
+      "Price": 350
+    },
+    {
+      "Desk": {
+        "Width": 48,
+        "Depth": 36,
+        "NumberofDrawers": 3,
+        "SurfaceMaterial": 3
+      },
+      "Name": "Bob Johnson",
+      "OrderDate": "10/04/2023",
+      "RushOrder": 7,
+      "Price": 420
+    }
+  ]
+
+
+}

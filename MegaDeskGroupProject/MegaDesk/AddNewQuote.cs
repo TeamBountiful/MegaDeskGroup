@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Security.Cryptography;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -53,6 +55,21 @@ namespace MegaDesk
             //add new DeskQuote to List DeskQuotes
             MainMenuForm viewMainMenuForm = (MainMenuForm)Tag;
             viewMainMenuForm.DeskQuotes.Add(deskQuote);
+
+
+            //public static void DeserializeJsonFile(string jsonFilePath)
+            //{
+            //    string jsonFile = File.ReadAllText(jsonFilePath);
+
+            //    List<DeskQuote> deskQuotes = JsonConvert.DeserializeObject.< List < DeskQuote >> (jsonFile);
+            //}
+
+            //has context menu
+
+            //    System.Text.Json.JsonSerializer.Deserialize<List<DeskQuote>>(jsonSaves);
+
+
+
 
             //Activate DisplayQuotesForm
             DisplayQuotes viewDisplayQuotes = new DisplayQuotes(deskQuote)

@@ -13,7 +13,7 @@ namespace MegaDesk
 {
     public partial class SearchQuoteForm : Form
     {
-        readonly string filePath = "test.json";
+        readonly string filePath = "quotes.json";
         public List<DeskQuote> quotes;
         public List<DeskQuote> filteredQuotes;
         public SearchQuoteForm()

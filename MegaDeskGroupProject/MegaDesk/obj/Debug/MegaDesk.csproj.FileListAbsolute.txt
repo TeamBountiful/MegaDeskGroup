@@ -27,3 +27,5 @@ C:\Users\amand\source\repos\CSE325\MegaDeskGroup2\MegaDeskGroupProject\MegaDesk\
 C:\Users\amand\source\repos\CSE325\MegaDeskGroup2\MegaDeskGroupProject\MegaDesk\bin\Debug\Newtonsoft.Json.dll
 C:\Users\amand\source\repos\CSE325\MegaDeskGroup2\MegaDeskGroupProject\MegaDesk\bin\Debug\Newtonsoft.Json.xml
 C:\Users\amand\source\repos\CSE325\MegaDeskGroup2\MegaDeskGroupProject\MegaDesk\bin\Debug\rushOrderPrices.txt
+C:\Users\amand\source\repos\CSE325\MegaDeskGroup2\MegaDeskGroupProject\MegaDesk\bin\Debug\Quotes.json
+C:\Users\amand\source\repos\CSE325\MegaDeskGroup2\MegaDeskGroupProject\MegaDesk\bin\Debug\test.json
