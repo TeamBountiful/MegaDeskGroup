@@ -40,6 +40,8 @@ namespace MegaDesk
         private double[,] rushOrderData;
         const string rushfilePath = "rushOrderPrices.txt";
 
+
+
         public DeskQuote(Desk desk) 
         {
             Desk = desk;
