@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,7 +15,7 @@ namespace MegaDesk
     {
         //file is the name of the json file of saved quotes.
         //quotes will be the list of quotes as class objects
-        readonly string filePath = "test.json";
+        readonly string filePath = "quotes.json";
         public List<DeskQuote> quotes;
         public ViewQuotesForm()
         {
