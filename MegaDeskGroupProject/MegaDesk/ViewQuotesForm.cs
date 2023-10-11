@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using Newtonsoft.Json;
 
 namespace MegaDesk
 {
@@ -32,7 +33,7 @@ namespace MegaDesk
         private void FillQuotes()
         {
             string jsonSaves = File.ReadAllText(filePath);
-            quotes = System.Text.Json.JsonSerializer.Deserialize<List<DeskQuote>>(jsonSaves);            
+            quotes = JsonConvert.DeserializeObject<List<DeskQuote>>(jsonSaves);            
             viewQuotes.DataSource = quotes;
 
         }
