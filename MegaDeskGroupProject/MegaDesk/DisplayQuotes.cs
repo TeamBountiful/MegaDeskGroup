@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,7 +15,7 @@ namespace MegaDesk
 {
     public partial class DisplayQuotes : Form
     {
-        public DeskQuote deskQuote = null;
+        DeskQuote deskQuote;
 
 
 
@@ -52,29 +52,31 @@ namespace MegaDesk
 
         private void SaveQuote(object sender, EventArgs e)
         {
-            //JToken existingQuote = quoteArray.FirstOrDefault(q => (string)q["quote"] == "Your quote here");
-            string jsonContent = File.ReadAllText("quotes.json");
-            //List<> quoteArray = {"OrderDate", "Name", "Witdh", "Depth", "RushOrder", "SurfaceMaterial", "NumberofDrawers", "Price"};
-            List<DeskQuote> quoteArray = JsonConvert.DeserializeObject<List<DeskQuote>>(jsonContent);
-            quoteArray.Add(deskQuote);
-            string updatedJson = quoteArray.ToString();
-            File.WriteAllText("quotes.json", updatedJson);
+      //JToken existingQuote = quoteArray.FirstOrDefault(q => (string)q["quote"] == "Your quote here");
+      //string jsonContent = File.ReadAllText("quotes.json");
+      //List<> quoteArray = {"OrderDate", "Name", "Witdh", "Depth", "RushOrder", "SurfaceMaterial", "NumberofDrawers", "Price"};
+      //List<DeskQuote> quoteArray = JsonConvert.DeserializeObject<List<DeskQuote>>(jsonContent);
+      //quoteArray.Add(deskQuote);
+      //string updatedJson = quoteArray.ToString();
+      //File.WriteAllText("quotes.json", updatedJson);
 
-            //StreamReader reader = new StreamReader("quotes.json");
-            //string json = reader.ReadToEnd();
-
-            /*string json;
-            using (StreamReader reader = new StreamReader("test.json"))
-            {
-                json = reader.ReadToEnd();
-            }
-            List<DeskQuote> quotes = JsonConvert.DeserializeObject<List<DeskQuote>>(json);
-            quotes.Add(deskQuote);
-            string updatedJson = JsonConvert.SerializeObject(quotes);
-            File.WriteAllText("quotes.JSON", updatedJson);*/
+      //StreamReader reader = new StreamReader("quotes.json");
+      //string json = reader.ReadToEnd();
 
 
-            
-        }
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      string json;
+      using (StreamReader reader = new StreamReader("quotes.json"))
+      {
+        json = reader.ReadToEnd();
+      }
+      List<DeskQuote> quotes = JsonConvert.DeserializeObject<List<DeskQuote>>(json);
+      quotes.Add(deskQuote);
+      string updatedJson = JsonConvert.SerializeObject(quotes);
+      MessageBox.Show("Quote successfully saved.");
+      File.WriteAllText("quotes.json", updatedJson);
+
+
     }
+  }
 }
