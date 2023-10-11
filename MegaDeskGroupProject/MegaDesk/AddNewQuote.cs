@@ -20,7 +20,7 @@ namespace MegaDesk
         public AddNewQuote()
         {
             InitializeComponent();
-            this.DateBox.Text = DateTime.Now.ToString("MMMM', 'dd', 'yyyy");
+            this.DateBox.Text = DateTime.Now.ToString("MM/dd/yyyy");
         }
 
 
