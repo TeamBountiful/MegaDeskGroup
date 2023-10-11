@@ -46,6 +46,7 @@
             this.DisplayDrawers = new System.Windows.Forms.Label();
             this.DisplayQuoteTotal = new System.Windows.Forms.Label();
             this.DisplayReturnMainButton = new System.Windows.Forms.Button();
+            this.save = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // DisplayQuoteLabel
@@ -53,9 +54,10 @@
             this.DisplayQuoteLabel.AutoSize = true;
             this.DisplayQuoteLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.DisplayQuoteLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DisplayQuoteLabel.Location = new System.Drawing.Point(330, 49);
+            this.DisplayQuoteLabel.Location = new System.Drawing.Point(440, 60);
+            this.DisplayQuoteLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DisplayQuoteLabel.Name = "DisplayQuoteLabel";
-            this.DisplayQuoteLabel.Size = new System.Drawing.Size(137, 31);
+            this.DisplayQuoteLabel.Size = new System.Drawing.Size(165, 38);
             this.DisplayQuoteLabel.TabIndex = 0;
             this.DisplayQuoteLabel.Text = "New Quote";
             this.DisplayQuoteLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -64,9 +66,10 @@
             // 
             this.DisplayNameLabel.AutoSize = true;
             this.DisplayNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DisplayNameLabel.Location = new System.Drawing.Point(96, 153);
+            this.DisplayNameLabel.Location = new System.Drawing.Point(128, 188);
+            this.DisplayNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DisplayNameLabel.Name = "DisplayNameLabel";
-            this.DisplayNameLabel.Size = new System.Drawing.Size(51, 20);
+            this.DisplayNameLabel.Size = new System.Drawing.Size(64, 25);
             this.DisplayNameLabel.TabIndex = 1;
             this.DisplayNameLabel.Text = "Name";
             // 
@@ -74,9 +77,10 @@
             // 
             this.DisplayWidthLabel.AutoSize = true;
             this.DisplayWidthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DisplayWidthLabel.Location = new System.Drawing.Point(100, 190);
+            this.DisplayWidthLabel.Location = new System.Drawing.Point(133, 234);
+            this.DisplayWidthLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DisplayWidthLabel.Name = "DisplayWidthLabel";
-            this.DisplayWidthLabel.Size = new System.Drawing.Size(50, 20);
+            this.DisplayWidthLabel.Size = new System.Drawing.Size(63, 25);
             this.DisplayWidthLabel.TabIndex = 2;
             this.DisplayWidthLabel.Text = "Width";
             // 
@@ -84,9 +88,10 @@
             // 
             this.DisplayDrawersLabel.AutoSize = true;
             this.DisplayDrawersLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DisplayDrawersLabel.Location = new System.Drawing.Point(78, 267);
+            this.DisplayDrawersLabel.Location = new System.Drawing.Point(104, 329);
+            this.DisplayDrawersLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DisplayDrawersLabel.Name = "DisplayDrawersLabel";
-            this.DisplayDrawersLabel.Size = new System.Drawing.Size(68, 20);
+            this.DisplayDrawersLabel.Size = new System.Drawing.Size(84, 25);
             this.DisplayDrawersLabel.TabIndex = 3;
             this.DisplayDrawersLabel.Text = "Drawers";
             // 
@@ -94,9 +99,10 @@
             // 
             this.DisplayDepthLabel.AutoSize = true;
             this.DisplayDepthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DisplayDepthLabel.Location = new System.Drawing.Point(97, 228);
+            this.DisplayDepthLabel.Location = new System.Drawing.Point(129, 281);
+            this.DisplayDepthLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DisplayDepthLabel.Name = "DisplayDepthLabel";
-            this.DisplayDepthLabel.Size = new System.Drawing.Size(53, 20);
+            this.DisplayDepthLabel.Size = new System.Drawing.Size(64, 25);
             this.DisplayDepthLabel.TabIndex = 4;
             this.DisplayDepthLabel.Text = "Depth";
             // 
@@ -104,9 +110,10 @@
             // 
             this.DisplaySurfMatLabel.AutoSize = true;
             this.DisplaySurfMatLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DisplaySurfMatLabel.Location = new System.Drawing.Point(25, 304);
+            this.DisplaySurfMatLabel.Location = new System.Drawing.Point(33, 374);
+            this.DisplaySurfMatLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DisplaySurfMatLabel.Name = "DisplaySurfMatLabel";
-            this.DisplaySurfMatLabel.Size = new System.Drawing.Size(125, 20);
+            this.DisplaySurfMatLabel.Size = new System.Drawing.Size(154, 25);
             this.DisplaySurfMatLabel.TabIndex = 5;
             this.DisplaySurfMatLabel.Text = "Surface Material";
             // 
@@ -114,9 +121,10 @@
             // 
             this.DisplayRushLabel.AutoSize = true;
             this.DisplayRushLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DisplayRushLabel.Location = new System.Drawing.Point(99, 339);
+            this.DisplayRushLabel.Location = new System.Drawing.Point(132, 417);
+            this.DisplayRushLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DisplayRushLabel.Name = "DisplayRushLabel";
-            this.DisplayRushLabel.Size = new System.Drawing.Size(47, 20);
+            this.DisplayRushLabel.Size = new System.Drawing.Size(57, 25);
             this.DisplayRushLabel.TabIndex = 6;
             this.DisplayRushLabel.Text = "Rush";
             // 
@@ -124,9 +132,10 @@
             // 
             this.DisplayDateLabel.AutoSize = true;
             this.DisplayDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DisplayDateLabel.Location = new System.Drawing.Point(62, 118);
+            this.DisplayDateLabel.Location = new System.Drawing.Point(83, 145);
+            this.DisplayDateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DisplayDateLabel.Name = "DisplayDateLabel";
-            this.DisplayDateLabel.Size = new System.Drawing.Size(88, 20);
+            this.DisplayDateLabel.Size = new System.Drawing.Size(108, 25);
             this.DisplayDateLabel.TabIndex = 7;
             this.DisplayDateLabel.Text = "Order Date";
             // 
@@ -134,9 +143,10 @@
             // 
             this.DisplayTotalLabel.AutoSize = true;
             this.DisplayTotalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DisplayTotalLabel.Location = new System.Drawing.Point(415, 205);
+            this.DisplayTotalLabel.Location = new System.Drawing.Point(553, 252);
+            this.DisplayTotalLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DisplayTotalLabel.Name = "DisplayTotalLabel";
-            this.DisplayTotalLabel.Size = new System.Drawing.Size(124, 26);
+            this.DisplayTotalLabel.Size = new System.Drawing.Size(156, 31);
             this.DisplayTotalLabel.TabIndex = 8;
             this.DisplayTotalLabel.Text = "Quote Total";
             // 
@@ -145,11 +155,12 @@
             this.DisplayOrderDate.AutoSize = true;
             this.DisplayOrderDate.BackColor = System.Drawing.Color.White;
             this.DisplayOrderDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DisplayOrderDate.Location = new System.Drawing.Point(156, 113);
-            this.DisplayOrderDate.MaximumSize = new System.Drawing.Size(200, 25);
-            this.DisplayOrderDate.MinimumSize = new System.Drawing.Size(200, 25);
+            this.DisplayOrderDate.Location = new System.Drawing.Point(208, 139);
+            this.DisplayOrderDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.DisplayOrderDate.MaximumSize = new System.Drawing.Size(267, 31);
+            this.DisplayOrderDate.MinimumSize = new System.Drawing.Size(267, 31);
             this.DisplayOrderDate.Name = "DisplayOrderDate";
-            this.DisplayOrderDate.Size = new System.Drawing.Size(200, 25);
+            this.DisplayOrderDate.Size = new System.Drawing.Size(267, 31);
             this.DisplayOrderDate.TabIndex = 9;
             // 
             // DisplayWidth
@@ -157,11 +168,12 @@
             this.DisplayWidth.AutoSize = true;
             this.DisplayWidth.BackColor = System.Drawing.Color.White;
             this.DisplayWidth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DisplayWidth.Location = new System.Drawing.Point(156, 185);
-            this.DisplayWidth.MaximumSize = new System.Drawing.Size(130, 25);
-            this.DisplayWidth.MinimumSize = new System.Drawing.Size(130, 25);
+            this.DisplayWidth.Location = new System.Drawing.Point(208, 228);
+            this.DisplayWidth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.DisplayWidth.MaximumSize = new System.Drawing.Size(173, 31);
+            this.DisplayWidth.MinimumSize = new System.Drawing.Size(173, 31);
             this.DisplayWidth.Name = "DisplayWidth";
-            this.DisplayWidth.Size = new System.Drawing.Size(130, 25);
+            this.DisplayWidth.Size = new System.Drawing.Size(173, 31);
             this.DisplayWidth.TabIndex = 10;
             // 
             // DisplayDepth
@@ -169,11 +181,12 @@
             this.DisplayDepth.AutoSize = true;
             this.DisplayDepth.BackColor = System.Drawing.Color.White;
             this.DisplayDepth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DisplayDepth.Location = new System.Drawing.Point(156, 223);
-            this.DisplayDepth.MaximumSize = new System.Drawing.Size(130, 25);
-            this.DisplayDepth.MinimumSize = new System.Drawing.Size(130, 25);
+            this.DisplayDepth.Location = new System.Drawing.Point(208, 274);
+            this.DisplayDepth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.DisplayDepth.MaximumSize = new System.Drawing.Size(173, 31);
+            this.DisplayDepth.MinimumSize = new System.Drawing.Size(173, 31);
             this.DisplayDepth.Name = "DisplayDepth";
-            this.DisplayDepth.Size = new System.Drawing.Size(130, 25);
+            this.DisplayDepth.Size = new System.Drawing.Size(173, 31);
             this.DisplayDepth.TabIndex = 11;
             // 
             // DisplayRushOrder
@@ -181,11 +194,12 @@
             this.DisplayRushOrder.AutoSize = true;
             this.DisplayRushOrder.BackColor = System.Drawing.Color.White;
             this.DisplayRushOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DisplayRushOrder.Location = new System.Drawing.Point(155, 339);
-            this.DisplayRushOrder.MaximumSize = new System.Drawing.Size(130, 25);
-            this.DisplayRushOrder.MinimumSize = new System.Drawing.Size(130, 25);
+            this.DisplayRushOrder.Location = new System.Drawing.Point(207, 417);
+            this.DisplayRushOrder.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.DisplayRushOrder.MaximumSize = new System.Drawing.Size(173, 31);
+            this.DisplayRushOrder.MinimumSize = new System.Drawing.Size(173, 31);
             this.DisplayRushOrder.Name = "DisplayRushOrder";
-            this.DisplayRushOrder.Size = new System.Drawing.Size(130, 25);
+            this.DisplayRushOrder.Size = new System.Drawing.Size(173, 31);
             this.DisplayRushOrder.TabIndex = 12;
             // 
             // DisplayName
@@ -193,11 +207,12 @@
             this.DisplayName.AutoSize = true;
             this.DisplayName.BackColor = System.Drawing.Color.White;
             this.DisplayName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DisplayName.Location = new System.Drawing.Point(156, 148);
-            this.DisplayName.MaximumSize = new System.Drawing.Size(130, 25);
-            this.DisplayName.MinimumSize = new System.Drawing.Size(130, 25);
+            this.DisplayName.Location = new System.Drawing.Point(208, 182);
+            this.DisplayName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.DisplayName.MaximumSize = new System.Drawing.Size(173, 31);
+            this.DisplayName.MinimumSize = new System.Drawing.Size(173, 31);
             this.DisplayName.Name = "DisplayName";
-            this.DisplayName.Size = new System.Drawing.Size(130, 25);
+            this.DisplayName.Size = new System.Drawing.Size(173, 31);
             this.DisplayName.TabIndex = 13;
             // 
             // DisplaySurfMat
@@ -205,11 +220,12 @@
             this.DisplaySurfMat.AutoSize = true;
             this.DisplaySurfMat.BackColor = System.Drawing.Color.White;
             this.DisplaySurfMat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DisplaySurfMat.Location = new System.Drawing.Point(156, 299);
-            this.DisplaySurfMat.MaximumSize = new System.Drawing.Size(130, 25);
-            this.DisplaySurfMat.MinimumSize = new System.Drawing.Size(130, 25);
+            this.DisplaySurfMat.Location = new System.Drawing.Point(208, 368);
+            this.DisplaySurfMat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.DisplaySurfMat.MaximumSize = new System.Drawing.Size(173, 31);
+            this.DisplaySurfMat.MinimumSize = new System.Drawing.Size(173, 31);
             this.DisplaySurfMat.Name = "DisplaySurfMat";
-            this.DisplaySurfMat.Size = new System.Drawing.Size(130, 25);
+            this.DisplaySurfMat.Size = new System.Drawing.Size(173, 31);
             this.DisplaySurfMat.TabIndex = 14;
             // 
             // DisplayDrawers
@@ -217,11 +233,12 @@
             this.DisplayDrawers.AutoSize = true;
             this.DisplayDrawers.BackColor = System.Drawing.Color.White;
             this.DisplayDrawers.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DisplayDrawers.Location = new System.Drawing.Point(155, 262);
-            this.DisplayDrawers.MaximumSize = new System.Drawing.Size(130, 25);
-            this.DisplayDrawers.MinimumSize = new System.Drawing.Size(130, 25);
+            this.DisplayDrawers.Location = new System.Drawing.Point(207, 322);
+            this.DisplayDrawers.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.DisplayDrawers.MaximumSize = new System.Drawing.Size(173, 31);
+            this.DisplayDrawers.MinimumSize = new System.Drawing.Size(173, 31);
             this.DisplayDrawers.Name = "DisplayDrawers";
-            this.DisplayDrawers.Size = new System.Drawing.Size(130, 25);
+            this.DisplayDrawers.Size = new System.Drawing.Size(173, 31);
             this.DisplayDrawers.TabIndex = 15;
             // 
             // DisplayQuoteTotal
@@ -229,30 +246,44 @@
             this.DisplayQuoteTotal.AutoSize = true;
             this.DisplayQuoteTotal.BackColor = System.Drawing.Color.White;
             this.DisplayQuoteTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DisplayQuoteTotal.Location = new System.Drawing.Point(545, 205);
-            this.DisplayQuoteTotal.MaximumSize = new System.Drawing.Size(150, 30);
-            this.DisplayQuoteTotal.MinimumSize = new System.Drawing.Size(150, 30);
+            this.DisplayQuoteTotal.Location = new System.Drawing.Point(727, 252);
+            this.DisplayQuoteTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.DisplayQuoteTotal.MaximumSize = new System.Drawing.Size(200, 37);
+            this.DisplayQuoteTotal.MinimumSize = new System.Drawing.Size(200, 37);
             this.DisplayQuoteTotal.Name = "DisplayQuoteTotal";
-            this.DisplayQuoteTotal.Size = new System.Drawing.Size(150, 30);
+            this.DisplayQuoteTotal.Size = new System.Drawing.Size(200, 37);
             this.DisplayQuoteTotal.TabIndex = 16;
             // 
             // DisplayReturnMainButton
             // 
             this.DisplayReturnMainButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.DisplayReturnMainButton.Location = new System.Drawing.Point(621, 400);
+            this.DisplayReturnMainButton.Location = new System.Drawing.Point(828, 492);
+            this.DisplayReturnMainButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DisplayReturnMainButton.Name = "DisplayReturnMainButton";
-            this.DisplayReturnMainButton.Size = new System.Drawing.Size(133, 38);
+            this.DisplayReturnMainButton.Size = new System.Drawing.Size(177, 47);
             this.DisplayReturnMainButton.TabIndex = 17;
             this.DisplayReturnMainButton.Text = "Return to Home";
             this.DisplayReturnMainButton.UseVisualStyleBackColor = false;
             this.DisplayReturnMainButton.Click += new System.EventHandler(this.DisplayReturnMainButton_Click);
             // 
+            // save
+            // 
+            this.save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.save.Location = new System.Drawing.Point(506, 492);
+            this.save.Name = "save";
+            this.save.Size = new System.Drawing.Size(203, 47);
+            this.save.TabIndex = 18;
+            this.save.Text = "Save";
+            this.save.UseVisualStyleBackColor = false;
+            this.save.Click += new System.EventHandler(this.SaveQuote);
+            // 
             // DisplayQuotes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.save);
             this.Controls.Add(this.DisplayReturnMainButton);
             this.Controls.Add(this.DisplayQuoteTotal);
             this.Controls.Add(this.DisplayDrawers);
@@ -271,6 +302,7 @@
             this.Controls.Add(this.DisplayWidthLabel);
             this.Controls.Add(this.DisplayNameLabel);
             this.Controls.Add(this.DisplayQuoteLabel);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DisplayQuotes";
             this.Text = "New Quote";
             this.ResumeLayout(false);
@@ -298,5 +330,6 @@
         private System.Windows.Forms.Label DisplayDrawers;
         private System.Windows.Forms.Label DisplayQuoteTotal;
         private System.Windows.Forms.Button DisplayReturnMainButton;
+        private System.Windows.Forms.Button save;
     }
 }
